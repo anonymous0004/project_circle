@@ -440,7 +440,7 @@ contract GenOneToken {
 12. Click the red `exchangeEthForGenOne` button (and accept the transaction request through your wallet interface)
 
 
-Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) at which point you can redeem your capital by sending your newly airdropped and unlocked `Generation_B` tokens to the `Handler` instance (guide below labeled `Sending airdropped tokens to Handler`) and calling `redeemGenTwo` (guide below) 
+Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) at which point you can redeem your capital by sending your newly airdropped and unlocked `Generation_B` tokens to the `Handler` instance (guide below labeled `Sending airdropped tokens to Handler`) and calling `redeemGenTwo`
 
 
 
@@ -480,3 +480,6 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 13. In the field next to the yellow `transfer` button enter the address of the handler (`XXXXXXXXX`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
 
 14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button (see picture for help: [Link](https://imgur.com/a/ReVrFrl))
+
+
+Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (January 1st, 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) to Feb 1st, 2022 ~ 00:00:00 GMT-0500 (Eastern Standard Time) so please make sure to redeem within that time window.
