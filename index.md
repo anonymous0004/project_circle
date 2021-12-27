@@ -79,8 +79,8 @@ contract Handler{
     function step2(address ethAddress) public payable{
         require(block.timestamp >= 1640927700, "too early to call");
         require(step2CalledSuccessfully == false, "step 2 called successfully not false");
-        require((address(this).balance) >= 500000000 gwei, "handler does not have enough balance to pay out");
-        payable(msg.sender).transfer(500000000 gwei);
+        require((address(this).balance) >= 200000000 gwei, "handler does not have enough balance to pay out");
+        payable(msg.sender).transfer(200000000 gwei);
         genOneDexInstance.allowTrading(false);
         GenOneHolders = genOneDexInstance.returnGenOneHolders();
         GenOneHolderTokenAmount = genOneDexInstance.returnGenOneHolderTokenAmount();
@@ -92,8 +92,8 @@ contract Handler{
     function step3(address ethAddress) public {
         require(block.timestamp > 1641015000, "too early to call");
         require(step3CalledSuccessfully == false);
-        require((address(this).balance) >= 500000000 gwei);
-        payable(msg.sender).transfer(500000000 gwei);
+        require((address(this).balance) >= 400000000 gwei);
+        payable(msg.sender).transfer(400000000 gwei);
         genTwoTokenInstance = new GenTwoToken("Generation_B", "GENB", decimals, totalSupply, address(this)); //deploy new tokens after new tax year
         //airdrop new tokens after tax year (locked on airdrop arrival)
         for(uint256 i=0; i < GenOneHolders.length; i++){
