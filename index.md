@@ -459,27 +459,15 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 3. Navigate to the `Deploy and run transactions` tab in remix and select `Injected Web3` under `Environment` (this will ask to connect to your wallet interface like Metamask)
 
-4. Select `Handler` under `Contract`
+4. Select `GenTwoToken` under `Contract`
 
-5. Load the instance of the handler by putting in `0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C` in the `At Address` field and pressing `At Address`
+5. Load the instance of the `GenTwoToken` by putting in `0xPLACEHOLDER_WILL_BE_UPDATED_AFTER_GEN_2_CREATION` and pressing `At Address`
 
-6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0XF0...` press the left expand carrot button
+6. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot (see picture for help: [Link](https://imgur.com/a/YrCMBws))
 
-7. Press the yellow `GetGenTwoToken` button
+7. In the field next to the yellow `transfer` button enter the address of the handler (`0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
 
-8. In the console (see picture attached if you don't know where the console is) expand the recent transaction using the expand carrot (see pictures for help: [Link](https://imgur.com/a/AYXNa4u) [Link](https://imgur.com/a/lz4o4Ih))
-
-9. Scroll down to the `decoded output` and copy the corresponding address (it will not be 0x00000.. like in the help image) (see picture for help: [Link](https://imgur.com/a/iDudbVm))
-
-10. Within the same `Deploy and run transactions` tab select `GenTwoToken` under `Contract`
-
-11. Load the instance of the `GenTwoToken` by putting in the copied address from step 9 in the `At Address` field and pressing `At Address`
-
-12. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot (see picture for help: [Link](https://imgur.com/a/YrCMBws))
-
-13. In the field next to the yellow `transfer` button enter the address of the handler (`0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
-
-14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button (see picture for help: [Link](https://imgur.com/a/ReVrFrl))
+8. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open (if its not there select `Handler` under `Contract` and load the instance of the `Handler` by putting in `0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C` and pressing `At Address`) then press the yellow `redeemGenTwo` button (see picture for help: [Link](https://imgur.com/a/ReVrFrl))
 
 
 Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (January 1st, 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) to Feb 1st, 2022 ~ 00:00:00 GMT-0500 (Eastern Standard Time) so please make sure to redeem within that time window.
