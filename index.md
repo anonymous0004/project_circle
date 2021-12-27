@@ -461,7 +461,7 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 4. Select `Handler` under `Contract`
 
-5. Load the instance of the system by putting in `0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C` in the `At Address` field and pressing `At Address`
+5. Load the instance of the handler by putting in `0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C` in the `At Address` field and pressing `At Address`
 
 6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0XF0...` press the left expand carrot button
 
