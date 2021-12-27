@@ -483,7 +483,7 @@ Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (
 
 -Due to the financial incentive embedded into some of the functions you can potentially be awarded up to 0.6ETH for being the first to call the functions `step2()` and `step3()` (these incentives allow the system to move along the steps through time optimally)
 
--When you file taxes you can cite illiquidity 
+-When you file taxes you can cite illiquidity of the `GenOneToken` instance
 
 
 ### What's In It For The Developer?
