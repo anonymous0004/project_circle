@@ -10,8 +10,8 @@ The idea is simple, create a token that people could roll their capital gains fo
 In short: Trade into the token (using the dead simple steps below) with your capital gains before the new tax year, get liquidated for a 100% loss (automated rug pull), then get airdropped your wealth back after the new tax year. Rinse repeat (while having all tax year to continue to hyper accumulating this capital inbetween). 
 
 The trustless system works in 2 main parts:
-1. Right before the tax year is up the Gen_A tokens (which users buy with capital gains) are rug pulled
-2. New Gen_B tokens are airdropped automatically to holders of the Gen_A tokens during the new tax year (Gen_B tokens can be redeemed for your capital gains back)
+1. Right before the tax year is up the `Generation_A` tokens (which users buy with capital gains) are rug pulled
+2. New `Generation_B` tokens are airdropped automatically to holders of the `Generation_A` tokens during the new tax year (`Generation_B` tokens can be redeemed for your capital gains back)
 
 
 The smart contracts are built to take advantage of a few key tax law decisions made by the IRS regarding cryptocurrency (main one being the IRS treating locked airdrops as property with a cost basis of $0 instead of as ordinary income). Legal avoidance is achieved by complying with how the law is written. When the law adapts so will the strategy. 
@@ -24,7 +24,7 @@ The wealthy don’t pay capital gains taxes, instead they let principal accumula
 
 ### How To Use Guide
 
-Copy the code located below
+1. Copy the code located below
 ```markdown
 // SPDX-License-Identifier: MIT
 
@@ -417,48 +417,61 @@ contract GenOneToken {
 
 }
 ```
-Naviagate to https://remix.ethereum.org/
+2. Naviagate to https://remix.ethereum.org/
 
-Under contracts create a new file called `Handler.sol` (see picture for help: https://imgur.com/a/SrCXvAq) 
+3. Under contracts create a new file called `Handler.sol` (see picture for help: [Link](https://imgur.com/a/SrCXvAq)) 
 
-Paste in the copied code
+4. Paste in the copied code
 
-Navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol` (see picture for help: https://imgur.com/a/S88vCDk)
+5. Navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol` (see picture for help: [Link](https://imgur.com/a/S88vCDk) also make sure `Compiler` is on 0.8.7)
+
+6. Navigate to the `Deploy and run transactions` tab in remix and select `Injected Web3` under `Environment` (this will ask to connect to your wallet interface like Metamask, see picture for help: [Link](https://imgur.com/a/t7lN9wL) )
+
+7. Select `GenOneDex` under `Contract` (see picture for help: [Link]()
+
+8. Load the instance of the system by putting in `XXXXXXXXXXXX` in the `At Address` field and pressing `At Address`
+
+9. At the bottom under `Deployed Contracts` you should now see a `GenOneDex at 0X...` press the left expand carrot button
+
+10. Enter the total amount you would like to exchange in Wei (1 Ether = 1000000000000000000 Wei) in the field next to the `exchangeEthForGenOne` button (see picture for help: [Link](https://imgur.com/a/7an6mBN))  
+
+11. Enter the same number of Wei in the `Value` field (see picture for help: [Link](https://imgur.com/a/XFkoxci))
+
+12. Click the red `exchangeEthForGenOne` button (and accept the transaction request through your wallet interface)
+
+
+Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) at which point you can redeem your capital by sending your newly airdropped and unlocked `Generation_B` tokens to the `Handler` instance (guide below labeled `Sending airdropped tokens to Handler`) and calling `redeemGenTwo` (guide below) 
 
 
 
 
 
+### Sending airdropped tokens to `Handler` and Calling `redeemGenTwo`
 
+1. Naviagate to https://remix.ethereum.org/
 
+2. If `Handler.sol` is still there navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol` otherwise copy the code block above and paste it into a new file called `Handler.sol` then navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol`
 
+3. Navigate to the `Deploy and run transactions` tab in remix and select `Injected Web3` under `Environment` (this will ask to connect to your wallet interface like Metamask)
 
+4. Select `Handler` under `Contract`
 
+5. Load the instance of the system by putting in `XXXXXXXXXXXX` in the `At Address` field and pressing `At Address`
 
-```markdown
-Syntax highlighted code block
+6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0X...` press the left expand carrot button
 
-# Header 1
-## Header 2
-### Header 3
+7. Press the yellow `GetGenTwoToken` button 
 
-- Bulleted
-- List
+8. In the console (see picture attached if you don't know where the console is) expand the recent transaction using the expand carrot 
 
-1. Numbered
-2. List
+9. Scroll down to the `decoded output` and copy the corresponding address (it will not be 0x00000.. like in the help image) 
 
-**Bold** and _Italic_ and `Code` text
+10. Within the same `Deploy and run transactions` tab select `GenTwoToken` under `Contract`
 
-[Link](url) and ![Image](src)
-```
+11. Load the instance of the `GenTwoToken` by putting in the copied address from step 9 in the `At Address` field and pressing `At Address`
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+12. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot
 
-### Jekyll Themes
+13. In the field next to the yellow `transfer` button enter the address of the handler (`XXXXXXXXX`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help:)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anonymous0004/project_circle/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button 
