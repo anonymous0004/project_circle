@@ -474,7 +474,10 @@ Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (
 
 
 
-### (OPTIONAL READING) Further "Good to Know" Info:
+### (OPTIONAL READING) 
+
+
+### Further "Good to Know" Info:
 
 -Buying into GenA/Gen1 tokens is disabled after Dec 31 2021 ~00:15:00 GMT-0500 (Eastern Standard Time) at which point the token is rugpulled
 
