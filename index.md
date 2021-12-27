@@ -446,6 +446,11 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 
 
+
+
+
+
+
 ### Sending airdropped tokens to `Handler` and Calling `redeemGenTwo`
 
 1. Naviagate to https://remix.ethereum.org/
@@ -460,18 +465,18 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0X...` press the left expand carrot button
 
-7. Press the yellow `GetGenTwoToken` button 
+7. Press the yellow `GetGenTwoToken` button
 
-8. In the console (see picture attached if you don't know where the console is) expand the recent transaction using the expand carrot 
+8. In the console (see picture attached if you don't know where the console is) expand the recent transaction using the expand carrot (see pictures for help: [Link](https://imgur.com/a/AYXNa4u) [Link](https://imgur.com/a/lz4o4Ih))
 
-9. Scroll down to the `decoded output` and copy the corresponding address (it will not be 0x00000.. like in the help image) 
+9. Scroll down to the `decoded output` and copy the corresponding address (it will not be 0x00000.. like in the help image) (see picture for help: [Link](https://imgur.com/a/iDudbVm))
 
 10. Within the same `Deploy and run transactions` tab select `GenTwoToken` under `Contract`
 
 11. Load the instance of the `GenTwoToken` by putting in the copied address from step 9 in the `At Address` field and pressing `At Address`
 
-12. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot
+12. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot (see picture for help: [Link](https://imgur.com/a/YrCMBws))
 
-13. In the field next to the yellow `transfer` button enter the address of the handler (`XXXXXXXXX`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help:)
+13. In the field next to the yellow `transfer` button enter the address of the handler (`XXXXXXXXX`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
 
-14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button 
+14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button (see picture for help: [Link](https://imgur.com/a/ReVrFrl))
