@@ -429,7 +429,7 @@ contract GenOneToken {
 
 7. Select `GenOneDex` under `Contract` (see picture for help: [Link]()
 
-8. Load the instance of the system by putting in `XXXXXXXXXXXX` in the `At Address` field and pressing `At Address`
+8. Load the instance of the exchange where you can trade into tokens by putting in `0x2f56e922cecB5507f897d7278374dA29C0B6Cd70` in the `At Address` field and pressing `At Address`
 
 9. At the bottom under `Deployed Contracts` you should now see a `GenOneDex at 0X...` press the left expand carrot button
 
@@ -461,9 +461,9 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 4. Select `Handler` under `Contract`
 
-5. Load the instance of the system by putting in `XXXXXXXXXXXX` in the `At Address` field and pressing `At Address`
+5. Load the instance of the system by putting in `0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C` in the `At Address` field and pressing `At Address`
 
-6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0X...` press the left expand carrot button
+6. At the bottom under `Deployed Contracts` you should now see a `Handler at 0XF0...` press the left expand carrot button
 
 7. Press the yellow `GetGenTwoToken` button
 
@@ -477,9 +477,10 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 
 12. Scroll down to `Deployed Contracts` and under the Handler instance you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot (see picture for help: [Link](https://imgur.com/a/YrCMBws))
 
-13. In the field next to the yellow `transfer` button enter the address of the handler (`XXXXXXXXX`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
+13. In the field next to the yellow `transfer` button enter the address of the handler (`0xF0799e76A2EB926CBb9684675F6Aeb6d31D1838C`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method (see picture for help: [Link](https://imgur.com/a/gLqgr9I))
 
 14. Collapse the `GenTwoToken` instance by pressing the expand carrot again. As a result you should only see your `Handler` instance open. Within the `Handler` instance Press the yellow `redeemGenTwo` button (see picture for help: [Link](https://imgur.com/a/ReVrFrl))
 
 
 Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (January 1st, 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) to Feb 1st, 2022 ~ 00:00:00 GMT-0500 (Eastern Standard Time) so please make sure to redeem within that time window.
+
