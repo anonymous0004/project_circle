@@ -477,6 +477,23 @@ Note: Buying into GenA/Gen1 tokens is disabled after Dec 31 2021 ~00:15:00 GMT-0
 
 
 
+### Burning GenA/Gen1 tokens
+
+1. Naviagate to https://remix.ethereum.org/
+
+2. If `Handler.sol` is still there navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol` otherwise copy the code block above and paste it into a new file called `Handler.sol` then navigate to the `Solidity compiler` tab in remix and press `Compile Handler.sol`
+
+3. Navigate to the `Deploy and run transactions` tab in remix and select `Injected Web3` under `Environment` (this will ask to connect to your wallet interface like Metamask)
+
+4. Select `GenOneToken` under `Contract`
+
+5. Load the instance of the `GenOneToken` by putting in `0x_GOING_TO_FILL_IN` and pressing `At Address`
+
+6. Scroll down to `Deployed Contracts` and you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot
+
+7. In the field next to the yellow `transfer` button enter the burn address (`0x0000000000000000000000000000000000000000`) followed by a comma followed by the total amount of Wei used previously in the `exchangeEthForGenOne` method
+
+
 ### (OPTIONAL READING) 
 
 
