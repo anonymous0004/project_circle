@@ -484,4 +484,4 @@ Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (
 ### What's in it for the developer?
 
 - Simple 1% fee is kept by the dev (see `redeemGenTwo` in the code block for more info)
-
+- The satisfaction of bringing power back to the people in some small way
