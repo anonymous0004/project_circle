@@ -473,17 +473,18 @@ Now wait until the new tax year, approximately January 1st 2022 ~ 00:30:00 GMT-0
 Note: Redeeming airdropped tokens for ethereum is valid within a 30 day window (January 1st, 2022 ~ 00:30:00 GMT-0500 (Eastern Standard Time) to Feb 1st, 2022 ~ 00:00:00 GMT-0500 (Eastern Standard Time) so please make sure to redeem within that time window.
 
 
+Note: Buying into GenA/Gen1 tokens is disabled after Dec 31 2021 ~00:15:00 GMT-0500 (Eastern Standard Time) at which point the token is rugpulled and you can send said tokens to the burn address `0x0000000000000000000000000000000000000000` using the `Burning GenA/Gen1 tokens` guide below
+
+
 
 ### (OPTIONAL READING) 
 
 
 ### Further "Good to Know" Info:
 
--Buying into GenA/Gen1 tokens is disabled after Dec 31 2021 ~00:15:00 GMT-0500 (Eastern Standard Time) at which point the token is rugpulled
-
 -Due to the financial incentive embedded into some of the functions you can potentially be awarded up to 0.6ETH for being the first to call the functions `step2()` and `step3()` (these incentives allow the system to move along the steps through time optimally)
 
--When you file taxes you can cite illiquidity of the `GenOneToken` instance
+-When you file taxes you can cite illiquidity of the `GenOneToken` instance or reference the burn transaction
 
 
 ### What's In It For The Developer?
