@@ -487,7 +487,7 @@ Note: Buying into GenA/Gen1 tokens is disabled after Dec 31 2021 ~00:15:00 GMT-0
 
 4. Select `GenOneToken` under `Contract`
 
-5. Load the instance of the `GenOneToken` by putting in `0x_GOING_TO_FILL_IN` and pressing `At Address`
+5. Load the instance of the `GenOneToken` by putting in `0x_PLACEHOLDER_WILL_BE_UPDATED` and pressing `At Address`
 
 6. Scroll down to `Deployed Contracts` and you should now see a `GenTwoToken` instance. Open it up by pressing the expand carrot
 
