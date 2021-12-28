@@ -7,7 +7,7 @@ The idea is simple, create a token that people could roll their capital gains fo
 
 ### How It Works
 
-In short: Trade into the token (using the dead simple steps below) with your capital gains before the new tax year, get liquidated for a 100% loss (automated rug pull), then get airdropped your wealth back after the new tax year. Rinse repeat (while having all tax year to continue to hyper accumulating this capital inbetween). 
+In short: Trade into the token (using the dead simple steps below) with your capital gains before the new tax year, get liquidated for a 100% loss (automated rug pull), then get airdropped your wealth back after the new tax year. Rinse repeat (while having all tax year to continue to hyper accumulating this capital in-between). 
 
 The trustless system works in 2 main parts:
 1. Right before the tax year is up the `Generation_A` tokens (which users buy with capital gains) are rug pulled
